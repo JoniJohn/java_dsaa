@@ -1,4 +1,4 @@
-A Java project that implements data structures, and searching and sorting algorithms
+A TDD Java project that implements data structures, and searching and sorting algorithms
 
 ## Data Structures
 + LinkedList
