@@ -18,5 +18,13 @@ public class BubbleSortsTest {
     }
     @Test
     public void SortIntergersArrayDesc(){
+        // arrange
+        final AllSorting<Integer> sorts = new AllSorting<Integer>();
+        Integer[] testArr = { 3, 1, 2 };
+        Integer[] expArr = { 3, 2, 1 };
+        // act
+        Integer[] resArr = sorts.bubbleSortDesc(testArr);
+        // assert
+        assertArrayEquals(expArr, resArr);
     }
 }
