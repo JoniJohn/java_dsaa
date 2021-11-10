@@ -15,6 +15,13 @@ public class InsertionSortTest {
         Integer[] resArr = sorts.insertionSortAsc(testArr);
         // assert
         assertArrayEquals(expArr, resArr);
+        // arrange for repeating numbers
+        Integer[] testRepArr = { 3, 1, 1,  2 };
+        Integer[] expRepArr = { 1, 1, 2, 3 };
+        // act
+        Integer[] resRepArr = sorts.insertionSortAsc(testRepArr);
+        // assert
+        assertArrayEquals(expRepArr, resRepArr);
     }
     
     @Test
@@ -27,5 +34,12 @@ public class InsertionSortTest {
         Integer[] resArr = sorts.insertionSortDesc(testArr);
         // assert
         assertArrayEquals(expArr, resArr);
+        // arrange for repeating numbers
+        Integer[] testRepArr = { 3, 1, 1, 2 };
+        Integer[] expRepArr = { 3, 2, 1, 1 };
+        // act
+        Integer[] resRepArr = sorts.insertionSortDesc(testRepArr);
+        // assert
+        assertArrayEquals(expRepArr, resRepArr);
     }
 }

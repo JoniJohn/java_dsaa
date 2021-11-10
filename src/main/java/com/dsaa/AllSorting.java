@@ -48,17 +48,42 @@ public class AllSorting<T extends Comparable<T>> {
      * @param arr
      * @return
      */
-    public T[] insertionSortAsc(T[] arr){
+    public T[] insertionSortAsc(T[] arr){ 
+        T temp;  
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (arr[j-1].compareTo(arr[j]) > 0){
+                    // perform a swap
+                    temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+                }else{
+                    break;
+                }
+            }
+        }  
         return arr;
     }
     
     /**
      * Sorts array using Insertion Sort algorithm in descinding order
-     * 
      * @param arr
      * @return
      */
     public T[] insertionSortDesc(T[] arr) {
+        T temp;
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (arr[j - 1].compareTo(arr[j]) < 0) {
+                    // perform a swap
+                    temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                } else {
+                    break;
+                }
+            }
+        }
         return arr;
     }
     
