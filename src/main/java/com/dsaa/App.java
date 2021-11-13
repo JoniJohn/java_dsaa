@@ -11,6 +11,6 @@ public class App
        // insertion Sort debug
        AllSorting<Integer> sorts = new AllSorting<Integer>();
        Integer[] arr = {3,1,1,2};
-       sorts.insertionSortDesc(arr); 
+       sorts.selectionSortDesc(arr); 
     }
 }
