@@ -112,9 +112,10 @@ public class AllSorting<T extends Comparable<T>> {
                 T temp = arr[i];
                 arr[i] = arr[smallest];
                 arr[smallest] = temp;
-            } else {
-                smallest = i + 1;
+
             }
+            flag = false;
+            smallest = i + 1;
 
         }
         return arr;
@@ -136,14 +137,14 @@ public class AllSorting<T extends Comparable<T>> {
                     flag = true;
                 }
             }
-            // if smallest has changed swap
+            // if largest has changed swap
             if (flag) {
                 T temp = arr[i];
                 arr[i] = arr[largest];
                 arr[largest] = temp;
-            } else {
-                largest = i + 1;
             }
+            flag = false;
+            largest = i + 1;
 
         }
         return arr;
