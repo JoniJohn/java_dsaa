@@ -122,7 +122,7 @@ public class AllSorting<T extends Comparable<T>> {
     }
 
     /**
-     * Sorts an array using Selection Sort algorithm in desciding order
+     * Sorts an array using Selection Sort algorithm in descending order
      * 
      * @param arr
      * @return
