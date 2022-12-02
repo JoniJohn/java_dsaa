@@ -8,6 +8,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+       // insertion Sort debug
+       AllSorting<Integer> sorts = new AllSorting<Integer>();
+       Integer[] arr = {3,1,1,2};
+       sorts.insertionSortDesc(arr); 
     }
 }
